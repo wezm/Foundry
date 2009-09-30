@@ -88,7 +88,7 @@ object DBVendor extends ConnectionManager {
 
   def releaseConnection(conn: Connection): Unit = synchronized {
     pool = conn :: pool
-    notify
+    //notify
   }
 }
 
