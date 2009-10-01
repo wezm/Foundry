@@ -26,7 +26,7 @@ class Boot {
     Schemifier.schemify(true, Log.infoF _, User, Page)
 
     // Build SiteMap
-    val entries = Menu(Loc("Home", List("index"), "Home")) :: Nil
+    val entries = Menu(Loc("Home", List("index"), "Home")) :: Menu(Loc("Test", List("test"), "Test Page")) :: Nil
     LiftRules.setSiteMap(SiteMap(entries:_*))
   }
 }
