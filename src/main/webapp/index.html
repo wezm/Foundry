@@ -1,11 +1,14 @@
 <lift:surround with="default" at="content">
     <!-- <h2>Welcome to your project!</h2>
     <p><lift:helloWorld.howdy /></p> -->
+		<div class="col last span-6 nudge-2">
+			<h4 class="ver small">Latest Entries</h4>
+		</div>
 
 		<!-- if (have_posts()) : -->	
-    <lift:front_page.list>
+    <lift:front_page.summary>
       
-      <page:list>
+      <book:entry>
   			<div class="post">
   				<div class="post-meta col span-2">
   					<ul class="nav">
@@ -18,7 +21,7 @@
 
   				<div class="post-content span-8 nudge-2">
   				  <page:excerpt>
-    					<h3><a href="http://rodrigogalindez.com/themes/modern-clix/?p=6" rel="bookmark" title="Permanent Link to Modern Clix">Modern Clix</a></h3> 
+    					<h3><a href="http://rodrigogalindez.com/themes/modern-clix/?p=6" rel="bookmark" title="Permanent Link to Modern Clix"><page:title /></a></h3> 
     					<p>This is a demo installation of Modern Clix, a free, downloadable Wordpress theme. Feel free to noodle around and test it.</p> 
               <p>Modern Clix is a minimal blog theme inspired in the Swiss Style of Design: It features Arial/Helvetica, grids, a generous use of whitespace for better readability and a strong focus in typography.</p> 
               <div class="full-image"><img src="http://rodrigogalindez.com/themes/modern-clix/wp-content/uploads/modern-clix.jpg" alt="Modern Clix" /> 
@@ -44,7 +47,7 @@
             <page:link><a href="#">Continue reading...</a></page:link>
   				</div>
   			</div>
-      </page:list>
+      </book:entry>
 
 			<ul class="navigation">
 				<li class="left"><a href="#">&larr; Older Entries</a></li>
@@ -57,7 +60,7 @@
 			<p>Sorry, but you are looking for something that isn't here.</p>
 
 		 endif; -->
-  </lift:front_page.list>
+  </lift:front_page.summary>
 
 </lift:surround>
 
