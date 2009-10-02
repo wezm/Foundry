@@ -1,11 +1,18 @@
 jQuery(function($)
 {
-	var container = $('.layout');
+  var container = $('.layout');
 
-	function relayout() {
-		container.layout({resize: false});
-	}
-	relayout();
+  function relayout() {
+    container.layout({resize: false});
+  }
+  relayout();
 
-	$(window).resize(relayout);
+  $(window).resize(relayout);
+
+
+  $('h2').addClass('dontend');
+  $('.body').columnize({
+    width : 300
+    // height : 400
+  });
 });
