@@ -50,6 +50,11 @@
     </dependency>
     <dependency>
       <groupId>net.liftweb</groupId>
+      <artifactId>lift-textile</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>net.liftweb</groupId>
       <artifactId>lift-mapper</artifactId>
       <version>1.0</version>
     </dependency>
