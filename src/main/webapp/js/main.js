@@ -12,7 +12,8 @@ jQuery(function($)
 
   $('h2').addClass('dontend');
   $('.body').columnize({
-    width : 300
+    width : 300,
+    lastNeverTallest: true
     // height : 400
   });
 });

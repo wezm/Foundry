@@ -32,7 +32,7 @@ display: inline-block;
 }
 
 .north, .south {
-  height: 10%;
+  height: 5%;
   padding: 8px 0;
 }
 
@@ -90,4 +90,21 @@ h2 {
 
 a, a:link {
   color:#000066;
+}
+
+p {
+  margin:0 !important;
+  padding-bottom:8pt !important;
+  padding-top:8pt !important;
+  color:black;
+  font-size:medium;
+  text-align:justify;
+}
+
+.column {
+  margin-right: 2em;
+}
+
+.last {
+  margin-right: 0;
 }
