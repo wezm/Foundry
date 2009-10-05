@@ -23,10 +23,10 @@ class Boot {
 
     // where to search snippet
     LiftRules.addToPackages("net.wezm")
-    Schemifier.schemify(true, Log.infoF _, User, Page)
+    Schemifier.schemify(true, Log.infoF _, User, Article)
 
     // Build SiteMap
-    val entries = Menu(Loc("Home", List("index"), "Home")) :: Menu(Loc("Test", List("test"), "Test Page")) :: Nil
+    val entries = Menu(Loc("Home", List("index"), "Home")) :: Menu(Loc("Test", List("test"), "Test Page")) :: Menu(Loc("Article", List("article"), "Show Article")) :: Nil
     LiftRules.setSiteMap(SiteMap(entries:_*))
   }
 }

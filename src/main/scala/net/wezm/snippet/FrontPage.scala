@@ -16,7 +16,7 @@ class FrontPage {
   val formatter = new java.text.SimpleDateFormat("yyyy/MM/dd")
 
   def summary (xhtml : NodeSeq) : NodeSeq = {
-    val entries : NodeSeq = Page.findAll match {
+    val entries : NodeSeq = Article.findAll match {
     	case Nil => Text("You have no pages, go write something") // Add link to create one...
     	case pages => pages.flatMap({page => 
     	  bind("page", chooseTemplate("book", "entry", xhtml),
