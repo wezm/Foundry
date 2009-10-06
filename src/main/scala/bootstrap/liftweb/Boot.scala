@@ -18,6 +18,10 @@ import _root_.javax.servlet.http.{HttpServletRequest}
   */
 class Boot {
   def boot {
+    LiftRules.early.append {
+      _.setCharacterEncoding("UTF-8")
+    }
+
     if (!DB.jndiJdbcConnAvailable_?)
       DB.defineConnectionManager(DefaultConnectionIdentifier, DBVendor)
 
@@ -28,6 +32,12 @@ class Boot {
     // Build SiteMap
     val entries = Menu(Loc("Home", List("index"), "Home")) :: Menu(Loc("Test", List("test"), "Test Page")) :: Menu(Loc("Article", List("article"), "Show Article")) :: Nil
     LiftRules.setSiteMap(SiteMap(entries:_*))
+
+    // Set up some rewrites
+    LiftRules.rewrite.append {
+      case RewriteRequest(ParsePath(List("article", articleSlug), _, _, _), _, _) =>
+        RewriteResponse("article" :: Nil, Map("slug" -> urlDecode(articleSlug)))
+    }
   }
 }
 

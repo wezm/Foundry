@@ -8,6 +8,7 @@ class Article extends LongKeyedMapper[Article] with IdPK {
   
   object author extends MappedLongForeignKey(this, User)
   object title extends MappedString(this, 128)
+  object slug extends MappedString(this, 128)
   object body extends MappedText(this)
 }
 
