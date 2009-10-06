@@ -16,14 +16,12 @@ class ArticlePage {
 
   def show (xhtml : NodeSeq) : NodeSeq = {
     //val article = Article.find(By(Article.slug, S.param("permalink"))) match { // XXX: Hardcoded id, should find from param By(Article.id, 1l)
-    val article = Article.find(1l) match {
-    	case Full(article: Article) => article
-    	case _ => return NotFoundResponse()
+    Article.find(1l) match {
+    	case Full(article: Article) => bind("article", xhtml,
+        "title" -> article.title,
+        "body" -> TextileParser.toHtml(article.body)
+    	)
+    	case _ => Text("Unable to find article")
     }
-    
-    bind("article", xhtml,
-      "title" -> article.title,
-      "body" -> TextileParser.toHtml(article.body)
-    )
   }
 }
