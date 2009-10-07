@@ -1,0 +1,79 @@
+<lift:surround with="default" at="content">
+<<<<<<< HEAD
+  <lift:ArticlePage.show>
+    <div class="timestamp">27 August, 2009</div>
+    <div class="category">State of the Art</div>
+    <h2><article:title>Apple's Sleek Upgrade</article:title></h2>
+    <div class="byline">By <a href="#">Wesley Moore</a></div>
+    <div class="body">
+      <article:body />
+    </div>
+  </lift:ArticlePage.show>
+</lift:surround>
+=======
+    <!-- <h2>Welcome to your project!</h2>
+    <p><lift:helloWorld.howdy /></p> -->
+		<div class="col last span-6 nudge-2">
+			<h4 class="ver small">Latest Entries</h4>
+		</div>
+
+		<!-- if (have_posts()) : -->	
+    <lift:front_page.summary>
+      
+      <book:entry>
+  			<div class="post">
+  				<div class="post-meta col span-2">
+  					<ul class="nav">
+  						<li><page:date>June 14, 2009</page:date></li>
+  						<li>In <page:category><a href="http://rodrigogalindez.com/themes/modern-clix/?cat=6" title="View all posts in Design" rel="category">Design</a></page:category></li>
+  						<li><page:comment_count>7 comments</page:comment_count></li>
+  						<!-- edit_post_link('Edit this post', '<li>', '</li>'); -->
+  					</ul>
+  				</div>
+
+  				<div class="post-content span-8 nudge-2">
+  				  <page:excerpt>
+    					<h3><a href="http://rodrigogalindez.com/themes/modern-clix/?p=6" rel="bookmark" title="Permanent Link to Modern Clix"><page:title /></a></h3> 
+    					<p>This is a demo installation of Modern Clix, a free, downloadable Wordpress theme. Feel free to noodle around and test it.</p> 
+              <p>Modern Clix is a minimal blog theme inspired in the Swiss Style of Design: It features Arial/Helvetica, grids, a generous use of whitespace for better readability and a strong focus in typography.</p> 
+              <div class="full-image"><img src="http://rodrigogalindez.com/themes/modern-clix/wp-content/uploads/modern-clix.jpg" alt="Modern Clix" /> 
+              <p><small class="tooltip"><em>Charly García and the Modern Clix.</em></small></p> 
+              </div> 
+              <p>Modern Clix features:</p> 
+              <ul> 
+              <li><strong>A strong focus in typography</strong>. The combination of leading, weights and type families is essential in any published media. Modern Clix displays texts and images beautifully and includes a set of nice ampersands, by-lines and other type goodies for you to enjoy. Check out the header of this blog for an example.</li> 
+              <li><strong>A strong grid</strong>. Texts and images are perfectly aligned to a 900px grid; uncomment a line in the <acronym title="Cascading Style Sheets">CSS</acronym> file to show up the underlieing grid.</li> 
+              <li><strong>An elastic design</strong>. Flexible layout? Fixed Layout? Elastic! Modern Clix is coded using EMs, so its layout is automagically stretched when you adjust the font size in your browser. Wowers!</li> 
+              <li><strong>Golden rectangle</strong>. Artists like Leonardo da Vinci proportioned their works to approximate to this rectangle, which has been considered universally aesthetically pleasing. The theme was designed following this principle.</li> 
+              <li><strong>Full width images and captions</strong>. Display images as large as 596px of width, with their proper captions or descriptions. The theme also include classes to align images to the left, center or right.</li> 
+              <li><strong>Twitter and Flickr integration was never so simple</strong>. Just change the sample usernames for your own ones and you are ready to go. No plugins required!</li> 
+              <li><strong>Extensible and modular</strong>. Modern Clix is minimal, but it&#8217;s extensible to suit your needs. Uncomment certain parts of the code to unlock gravatars, tags and widgets. Google Adsense is also supported.</li> 
+              <li><strong>Standards compliant</strong>. Modern Clix validates as XHTML 1.0 Strict and it&#8217;s cross browser compatible. This means that it works well in every browser in the planet.</li> 
+              <li><strong>Easy installation</strong>. You don&#8217;t need extra plugins to install the theme, just unpack and activate to enjoy it.</li> 
+              <li><strong>Professionally designed and coded</strong>. This design was featured in <a href="http://www.smashingmagazine.com/2008/11/17/showcase-of-minimalist-and-clean-designs/">Smashing Magazine</a> (and <a href="http://www.smashingmagazine.com/2009/05/18/100-amazing-free-wordpress-themes-for-2009/">again</a>), <a href="http://vandelaydesign.com/blog/galleries/beautiful-minimal/">Vandelay Website Design</a>, <a href="http://www.designbygrid.com/showcase/view/5cf2f6a919dc6f95e2fa760e30281ddb">Design By Grid</a>, <a href="http://www.urbantrash.net/cssgallery/2008/08/06/the-old-fashioned/">CSS Gallery</a> and many others, as an example of beautiful, minimal web site design. Now you can download it for free.</li> 
+              </ul> 
+              <p>Modern Clix was initially priced $3500. Now it&#8217;s released as a free theme to download and enjoy. If you need support customizing it, you can book hours of support for $100/hour. A block of 5 hours is sold as $400. <a href="http://www.rodrigogalindez.com/contacto/">Contact me</a> for more information.</p> 
+              <p>The name Modern Clix is inspired in Charly García&#8217;s album &#8220;Clics Modernos&#8221;. García is probably the best musician in Argentina. Enjoy!</p> 
+              <p><a style="display: block; width: 205px; margin: 0 auto;"  href="http://rodrigogalindez.com/themes/modern-clix/?download=modern-clix"><img src="/images/button-download.gif" /></a></p> 
+            </page:excerpt>
+            <page:link><a href="#">Continue reading...</a></page:link>
+  				</div>
+  			</div>
+      </book:entry>
+
+			<ul class="navigation">
+				<li class="left"><a href="#">&larr; Older Entries</a></li>
+				<li class="right"><a href="#">Newer Entries &rarr;</a></li>
+			</ul>
+
+		<!-- else : 
+
+			<h3>Not Found</h3>
+			<p>Sorry, but you are looking for something that isn't here.</p>
+
+		 endif; -->
+  </lift:front_page.summary>
+
+</lift:surround>
+
+>>>>>>> contents-page
